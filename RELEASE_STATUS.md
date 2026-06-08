@@ -17,6 +17,8 @@ Status: **NO-GO for final Hackpad submission until manual KiCad/CAD validation i
 - CAD and production STEP draft files are included.
 - Hand-authored Gerber draft files are staged for packaging into `production/gerbers.zip`.
 - Local git repository was initialized and the project was committed.
+- A click helper was added: `Create-GitHub-Repo.url` opens GitHub repo creation with the suggested project name.
+- A push helper was added: `PUSH_AFTER_GITHUB_REPO_CREATED.cmd` prompts for the created repo URL and pushes `main`.
 
 ## Not Verified Here
 
@@ -24,7 +26,8 @@ Status: **NO-GO for final Hackpad submission until manual KiCad/CAD validation i
 - KiCad CLI is not installed, so production Gerbers were not exported from KiCad.
 - FreeCAD/OpenSCAD/Fusion 360 is not installed, so STEP geometry was not generated from a real CAD kernel here.
 - KMK is not installed locally, so firmware import/runtime validation was not run.
-- GitHub push is blocked because this workspace has no `origin` remote and GitHub CLI (`gh`) is not installed.
+- GitHub push is blocked until the GitHub repo is created and its URL is provided to the push helper.
+- GitHub CLI (`gh`) is not installed, so repo creation cannot be automated from the CLI in this workspace.
 
 ## Final Manual Checks
 
