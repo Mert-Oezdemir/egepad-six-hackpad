@@ -1,0 +1,11 @@
+Ref,Component,Qty,Source,Notes
+U1,Seeed XIAO RP2040,1,Hackpad kit,Through-hole mounted on bottom side
+SW1-SW6,MX-style mechanical switch,6,Hackpad kit,2x3 layout at 19.05mm spacing
+D1-D6,1N4148 through-hole diode,6,Hackpad kit,Stripe toward row wire
+ENC1,EC11 rotary encoder 20mm D-shaft,1,Hackpad kit,Right side volume/scroll encoder
+KC1-KC6,Blank DSA keycap,6,Hackpad kit,One per switch
+H1-H6,M3 x 5 x 4mm heatset insert,6,Hackpad kit,Bottom case
+S1-S6,M3 x 16mm screw,6,Hackpad kit,Top plate pass-through
+PCB,2-layer PCB,1,JLCPCB grant,92mm x 60mm target
+CASE,3D-printed top and bottom case,1 set,Printing Legion,112mm x 80mm x 18mm target
+

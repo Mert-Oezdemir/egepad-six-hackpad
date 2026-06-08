@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "filename": "egepad.kicad_pro",
+    "version": 1
+  },
+  "project": {
+    "name": "EgePad Six Hackpad",
+    "owner": "Ege Özdemir",
+    "mission": "Hackpad"
+  },
+  "board": {
+    "design_settings": {
+      "defaults": {
+        "board_outline": "92mm x 60mm",
+        "layers": 2,
+        "copper_finish": "HASL or lead-free HASL"
+      }
+    }
+  },
+  "schematic": {
+    "drawing": {
+      "title": "EgePad Six Hackpad",
+      "company": "Ege Özdemir",
+      "rev": "0.1"
+    }
+  }
+}
+

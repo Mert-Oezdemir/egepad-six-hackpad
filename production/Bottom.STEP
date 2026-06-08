@@ -1,0 +1,19 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('EgePad Six production bottom shell conceptual STEP; replace with final CAD export'),'2;1');
+FILE_NAME('Bottom.STEP','2026-06-08T00:00:00',('Ege Özdemir'),('Codex'),'manual','manual','');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2'));
+ENDSEC;
+DATA;
+#1=APPLICATION_CONTEXT('automotive design');
+#2=PRODUCT_CONTEXT('',#1,'mechanical');
+#3=PRODUCT('EGEPAD_SIX_BOTTOM_PRODUCTION','EgePad Six bottom shell production draft','replace before final submission',(#2));
+#4=CARTESIAN_POINT('',(0.,0.,0.));
+#5=DIRECTION('',(0.,0.,1.));
+#6=DIRECTION('',(1.,0.,0.));
+#7=AXIS2_PLACEMENT_3D('',#4,#5,#6);
+#8=BLOCK('BOTTOM_SHELL_BOUNDING_SOLID',#7,112.,80.,13.);
+#9=SHAPE_REPRESENTATION('EgePad Six bottom shell production draft',(#8),#7);
+ENDSEC;
+END-ISO-10303-21;
+
