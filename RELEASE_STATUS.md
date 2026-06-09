@@ -42,3 +42,17 @@ GitHub repository: https://github.com/Mert-Oezdemir/egepad-six-hackpad
 6. Export final `Top.STEP`, `Bottom.STEP`, and `assembled-model.STEP`.
 7. Copy `Firmware/main.py` to a CircuitPython XIAO RP2040 with KMK installed and confirm the matrix works.
 8. Update this file to GO only after the above checks pass.
+
+## Local Check Commands
+
+Scaffold:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\check-submission.ps1
+```
+
+Final readiness:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\check-final-readiness.ps1
+```

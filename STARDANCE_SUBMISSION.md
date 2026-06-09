@@ -29,6 +29,7 @@ EgePad Six is a compact Hackpad macropad by Ege Özdemir with a 2x3 MX switch ma
 - GitHub repository exists and `main` has been pushed.
 - Required Hackpad folders are present: `CAD/`, `PCB/`, `Firmware/`, and `production/`.
 - README includes project owner, BOM, wiring plan, and visual previews.
+- `HACKPAD_REQUIREMENTS_MAP.md` maps every expected submission item to repo evidence.
 - Local submission scaffold check passes with `scripts/check-submission.ps1`.
 - Clean source zip can be generated with `scripts/package-source.ps1`.
 

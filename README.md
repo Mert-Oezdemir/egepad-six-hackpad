@@ -112,4 +112,9 @@ Diode orientation target: `COL2ROW`, with diode stripe toward the row wire.
 
 See [RELEASE_STATUS.md](RELEASE_STATUS.md).
 
+Requirement mapping:
+
+- [Hackpad requirements map](HACKPAD_REQUIREMENTS_MAP.md)
+- [Stardance submission handoff](STARDANCE_SUBMISSION.md)
+
 Important note: this environment does not have KiCad CLI or a CAD kernel installed, so the PCB DRC, real Gerber export, and STEP geometry have not been tool-verified here. The repo is prepared as a complete Hackpad submission package scaffold and should be opened in KiCad/Fusion 360 for final manufacturability checks before submitting.
