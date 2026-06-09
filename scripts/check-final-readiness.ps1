@@ -63,8 +63,8 @@ if ((Test-CommandExists "FreeCADCmd") -or (Test-CommandExists "openscad")) {
 
 if (Test-CommandExists "python") {
   try {
-    python -m py_compile Firmware\main.py production\main.py
-    Add-Check "firmware syntax" "PASS" "Python syntax check passed."
+    python -c "import ast,pathlib; [ast.parse(pathlib.Path(p).read_text(encoding='utf-8'), filename=p) for p in ['Firmware/main.py','production/main.py']]"
+    Add-Check "firmware syntax" "PASS" "Python AST syntax check passed without writing bytecode."
   } catch {
     Add-Check "firmware syntax" "FAIL" "Python syntax check failed."
   }

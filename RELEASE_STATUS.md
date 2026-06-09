@@ -23,6 +23,8 @@ GitHub repository: https://github.com/Mert-Oezdemir/egepad-six-hackpad
 - A push helper was added: `PUSH_AFTER_GITHUB_REPO_CREATED.cmd` prompts for the created repo URL and pushes `main`.
 - A clean source package helper was added: `scripts/package-source.ps1`.
 - GitHub push to `origin/main` has completed.
+- Measured CAD source and dimension notes were added under `CAD/`.
+- Pinout, matrix map, and firmware notes were added.
 
 ## Not Verified Here
 

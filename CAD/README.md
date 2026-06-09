@@ -15,3 +15,7 @@ Target case:
 
 The included STEP files are draft/concept STEP files generated as submission placeholders in an environment without a CAD kernel. Open the design in Fusion 360 or another CAD tool and export final STEP geometry before final Hackpad submission.
 
+Source files:
+
+- `egepad_case.scad`: measured case source with switch cutouts, encoder cutout, screw holes, insert pockets, PCB pocket, and USB-C cutout.
+- `MECHANICAL_DIMENSIONS.md`: dimension table for manual CAD review.

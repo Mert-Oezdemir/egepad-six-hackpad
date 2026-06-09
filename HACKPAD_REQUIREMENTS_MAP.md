@@ -18,7 +18,7 @@ Repository: https://github.com/Mert-Oezdemir/egepad-six-hackpad
 | BOM | `BOM.csv` and README BOM table | Done |
 | PCB files | `PCB/egepad.kicad_pro`, `PCB/egepad.kicad_sch`, `PCB/egepad.kicad_pcb` | Draft present |
 | Firmware | `Firmware/main.py` and `production/main.py` | Draft present |
-| CAD / case files | `CAD/*.STEP` | Draft present |
+| CAD / case files | `CAD/*.STEP`, `CAD/egepad_case.scad`, `CAD/MECHANICAL_DIMENSIONS.md` | Draft present with measured source |
 | Production files | `production/gerbers.zip`, `production/*.STEP`, `production/main.py` | Draft present |
 | Stardance handoff | `STARDANCE_SUBMISSION.md`, `STARDANCE_SUBMIT_TEXT.md` | Done |
 
@@ -38,10 +38,11 @@ The repo is ready to show the project, intent, structure, and build plan. It is 
 4. Run DRC.
 5. Export real Gerbers and replace `production/gerbers.zip`.
 6. Open or rebuild the case in CAD.
-7. Export real `Top.STEP`, `Bottom.STEP`, and `assembled-model.STEP`.
-8. Install CircuitPython + KMK on a XIAO RP2040.
-9. Copy `Firmware/main.py`.
-10. Test all six keys and encoder directions/button.
+7. Use `CAD/egepad_case.scad` and `CAD/MECHANICAL_DIMENSIONS.md` as source references.
+8. Export real `Top.STEP`, `Bottom.STEP`, and `assembled-model.STEP`.
+9. Install CircuitPython + KMK on a XIAO RP2040.
+10. Copy `Firmware/main.py`.
+11. Test all six keys and encoder directions/button.
 
 ## One-Command Local Checks
 
@@ -62,4 +63,3 @@ Clean source package:
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\package-source.ps1
 ```
-

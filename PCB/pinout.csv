@@ -1,0 +1,11 @@
+Signal,XIAO Pin,Firmware Pin,Function
+ROW0,D0,board.D0,Matrix row 0
+ROW1,D1,board.D1,Matrix row 1
+COL0,D2,board.D2,Matrix column 0
+COL1,D3,board.D3,Matrix column 1
+COL2,D4,board.D4,Matrix column 2
+ENCA,D8,board.D8,Encoder A
+ENCB,D9,board.D9,Encoder B
+ENCSW,D10,board.D10,Encoder push switch
+GND,GND,board.GND,Ground
+

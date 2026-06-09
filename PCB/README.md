@@ -24,3 +24,7 @@ Pin map:
 
 The KiCad files are hand-authored draft files because KiCad CLI is not installed in this environment. Open in KiCad, assign the Hackpad care package XIAO/MX footprints, run ERC/DRC, and export real Gerbers before final submission.
 
+Supporting contract files:
+
+- `pinout.csv`: XIAO pin and firmware signal mapping.
+- `matrix-map.csv`: physical key locations, matrix positions, and default keymap.

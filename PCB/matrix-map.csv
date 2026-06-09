@@ -1,0 +1,11 @@
+Position,Switch,Row,Column,Default Key
+Top left,SW1,ROW0,COL0,ESC
+Top middle,SW2,ROW0,COL1,CTRL+C
+Top right,SW3,ROW0,COL2,CTRL+V
+Bottom left,SW4,ROW1,COL0,CTRL+Z
+Bottom middle,SW5,ROW1,COL1,CTRL+S
+Bottom right,SW6,ROW1,COL2,ENTER
+Encoder left,ENC1 A/B,N/A,N/A,Volume down
+Encoder right,ENC1 A/B,N/A,N/A,Volume up
+Encoder press,ENC1 SW,N/A,N/A,Mute
+
