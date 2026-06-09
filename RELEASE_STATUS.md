@@ -19,6 +19,7 @@ Status: **NO-GO for final Hackpad submission until manual KiCad/CAD validation i
 - Local git repository was initialized and the project was committed.
 - A click helper was added: `Create-GitHub-Repo.url` opens GitHub repo creation with the suggested project name.
 - A push helper was added: `PUSH_AFTER_GITHUB_REPO_CREATED.cmd` prompts for the created repo URL and pushes `main`.
+- A clean source package helper was added: `scripts/package-source.ps1`.
 
 ## Not Verified Here
 
