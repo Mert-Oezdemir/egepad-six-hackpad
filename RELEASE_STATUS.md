@@ -8,6 +8,8 @@ Date: 2026-06-08
 
 Status: **NO-GO for final Hackpad submission until manual KiCad/CAD validation is completed.**
 
+GitHub repository: https://github.com/Mert-Oezdemir/egepad-six-hackpad
+
 ## Completed In This Workspace
 
 - Repository folder structure matches the Hackpad guide.
@@ -20,6 +22,7 @@ Status: **NO-GO for final Hackpad submission until manual KiCad/CAD validation i
 - A click helper was added: `Create-GitHub-Repo.url` opens GitHub repo creation with the suggested project name.
 - A push helper was added: `PUSH_AFTER_GITHUB_REPO_CREATED.cmd` prompts for the created repo URL and pushes `main`.
 - A clean source package helper was added: `scripts/package-source.ps1`.
+- GitHub push to `origin/main` has completed.
 
 ## Not Verified Here
 
@@ -27,8 +30,7 @@ Status: **NO-GO for final Hackpad submission until manual KiCad/CAD validation i
 - KiCad CLI is not installed, so production Gerbers were not exported from KiCad.
 - FreeCAD/OpenSCAD/Fusion 360 is not installed, so STEP geometry was not generated from a real CAD kernel here.
 - KMK is not installed locally, so firmware import/runtime validation was not run.
-- GitHub push is blocked until the GitHub repo is created and its URL is provided to the push helper.
-- GitHub CLI (`gh`) is not installed, so repo creation cannot be automated from the CLI in this workspace.
+- GitHub CLI (`gh`) is not installed, so future GitHub automation should use plain `git` or the browser helpers unless `gh` is installed.
 
 ## Final Manual Checks
 

@@ -4,6 +4,8 @@ Project owner: **Ege Özdemir**
 
 EgePad Six is a compact Hackpad macropad design for the Hack Club Hackpad mission. It uses a 2x3 MX switch matrix, one EC11 rotary encoder, and a Seeed XIAO RP2040 running KMK firmware.
 
+GitHub repository: https://github.com/Mert-Oezdemir/egepad-six-hackpad
+
 This repository follows the Hackpad submission structure described in the official guide: PCB design files, CAD/STEP case files, firmware, and production outputs are kept in separate folders.
 
 Official reference:
@@ -111,4 +113,3 @@ Diode orientation target: `COL2ROW`, with diode stripe toward the row wire.
 See [RELEASE_STATUS.md](RELEASE_STATUS.md).
 
 Important note: this environment does not have KiCad CLI or a CAD kernel installed, so the PCB DRC, real Gerber export, and STEP geometry have not been tool-verified here. The repo is prepared as a complete Hackpad submission package scaffold and should be opened in KiCad/Fusion 360 for final manufacturability checks before submitting.
-

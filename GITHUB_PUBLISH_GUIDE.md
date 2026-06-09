@@ -4,6 +4,10 @@ Project: EgePad Six Hackpad
 
 Owner: Ege Özdemir
 
+Repository:
+
+https://github.com/Mert-Oezdemir/egepad-six-hackpad
+
 ## One-Click Repo Creation Link
 
 Double-click:
@@ -52,6 +56,6 @@ The package excludes `.git`, `.env*`, logs, cache folders, and generated junk.
 ## Current Known State
 
 - Local commit exists.
-- Push requires a GitHub repo URL and working GitHub credentials.
+- Push to `origin/main` has completed.
 - Clean source package can be generated with `scripts/package-source.ps1`.
 - Hardware/CAD manufacturing validation is still not complete; see `RELEASE_STATUS.md`.
