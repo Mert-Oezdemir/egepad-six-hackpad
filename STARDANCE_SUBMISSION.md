@@ -16,6 +16,8 @@ https://hackpad.hackclub.com/guide
 
 Use the GitHub repository link above as the project link.
 
+Stardance requires sign-in before creating a project. Open `Open-Stardance-Hackpad-Mission.url`, sign in if prompted, then create the project from the Hackpad mission page.
+
 Suggested short description:
 
 ```text
@@ -42,4 +44,3 @@ Final manual checks still required:
 - KiCad-generated Gerbers replacing the draft `production/gerbers.zip`.
 - CAD-kernel-generated STEP exports replacing the draft STEP placeholders.
 - Firmware test on XIAO RP2040 with KMK installed.
-

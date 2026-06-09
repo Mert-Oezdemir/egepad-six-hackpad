@@ -8,6 +8,12 @@ Repository:
 
 https://github.com/Mert-Oezdemir/egepad-six-hackpad
 
+One-click helpers:
+
+- `Open-GitHub-Repo.url`
+- `Open-Stardance-Hackpad-Mission.url`
+- `Open-Stardance-Projects.url`
+
 ## One-Click Repo Creation Link
 
 Double-click:
