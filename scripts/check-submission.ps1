@@ -4,6 +4,7 @@ $requiredFiles = @(
   "README.md",
   "BOM.csv",
   "project.json",
+  "START_STARDANCE.html",
   "CAD/assembled-model.STEP",
   "CAD/Top.STEP",
   "CAD/Bottom.STEP",

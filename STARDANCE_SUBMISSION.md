@@ -18,6 +18,8 @@ Use the GitHub repository link above as the project link.
 
 Stardance requires sign-in before creating a project. Open `Open-Stardance-Hackpad-Mission.url`, sign in if prompted, then create the project from the Hackpad mission page.
 
+For a more guided local flow, open `START_STARDANCE.html`. It has direct links to Stardance/GitHub and one-click copy buttons for the project title, owner, repo link, and description.
+
 Suggested short description:
 
 ```text

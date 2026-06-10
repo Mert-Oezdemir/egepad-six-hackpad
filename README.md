@@ -8,6 +8,8 @@ GitHub repository: https://github.com/Mert-Oezdemir/egepad-six-hackpad
 
 This repository follows the Hackpad submission structure described in the official guide: PCB design files, CAD/STEP case files, firmware, and production outputs are kept in separate folders.
 
+Stardance helper: open [START_STARDANCE.html](START_STARDANCE.html) locally for project links and one-click copy fields.
+
 Official reference:
 - Hackpad guide: https://hackpad.hackclub.com/guide
 - Stardance Hackpad mission guide: https://stardance.hackclub.com/missions/hackpad/guide
@@ -116,6 +118,7 @@ Requirement mapping:
 
 - [Hackpad requirements map](HACKPAD_REQUIREMENTS_MAP.md)
 - [Stardance submission handoff](STARDANCE_SUBMISSION.md)
+- [Stardance launch helper](START_STARDANCE.html)
 - [Mechanical dimensions](CAD/MECHANICAL_DIMENSIONS.md)
 - [Firmware notes](Firmware/README.md)
 

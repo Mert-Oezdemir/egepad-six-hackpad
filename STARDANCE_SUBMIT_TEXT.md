@@ -2,6 +2,8 @@
 
 Use this when creating the Stardance project.
 
+Local helper: open `START_STARDANCE.html` for direct links and one-click copy buttons.
+
 ## Project Title
 
 EgePad Six Hackpad

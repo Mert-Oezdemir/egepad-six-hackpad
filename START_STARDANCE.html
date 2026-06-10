@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EgePad Six Stardance Launch</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2937;
+      --muted: #64748b;
+      --line: #d6dee8;
+      --paper: #f8fafc;
+      --panel: #ffffff;
+      --blue: #1d4ed8;
+      --blue-dark: #173b93;
+      --green: #047857;
+      --amber: #b45309;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 18px 48px;
+    }
+
+    header {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 44px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .toolbar,
+    .grid,
+    .copy-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .toolbar {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin: 22px 0;
+    }
+
+    .grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: start;
+    }
+
+    section {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 18px;
+    }
+
+    a.button,
+    button {
+      min-height: 44px;
+      border: 1px solid var(--blue);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      color: #ffffff;
+      background: var(--blue);
+      cursor: pointer;
+    }
+
+    a.button:hover,
+    button:hover {
+      background: var(--blue-dark);
+    }
+
+    button.secondary,
+    a.button.secondary {
+      color: var(--blue);
+      background: #ffffff;
+    }
+
+    button.secondary:hover,
+    a.button.secondary:hover {
+      color: #ffffff;
+      background: var(--blue);
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfdff;
+    }
+
+    .label {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .value {
+      overflow-wrap: anywhere;
+      line-height: 1.45;
+    }
+
+    .status {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .pill {
+      display: inline-flex;
+      width: fit-content;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .ready {
+      color: #ffffff;
+      background: var(--green);
+    }
+
+    .manual {
+      color: #ffffff;
+      background: var(--amber);
+    }
+
+    #toast {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      max-width: calc(100vw - 32px);
+      border-radius: 8px;
+      padding: 12px 14px;
+      color: #ffffff;
+      background: #111827;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 140ms ease, transform 140ms ease;
+    }
+
+    #toast.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 760px) {
+      .toolbar,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>EgePad Six Hackpad</h1>
+      <p>Stardance launch helper for Ege &Ouml;zdemir. Open the submission pages, then copy the exact project fields from here.</p>
+    </header>
+
+    <nav class="toolbar" aria-label="Quick links">
+      <a class="button" href="https://stardance.hackclub.com/missions/hackpad" target="_blank" rel="noreferrer">Open Mission</a>
+      <a class="button" href="https://stardance.hackclub.com/@neo369/projects" target="_blank" rel="noreferrer">Open Projects</a>
+      <a class="button secondary" href="https://github.com/Mert-Oezdemir/egepad-six-hackpad" target="_blank" rel="noreferrer">Open GitHub</a>
+      <a class="button secondary" href="https://hackpad.hackclub.com/guide" target="_blank" rel="noreferrer">Open Guide</a>
+    </nav>
+
+    <div class="grid">
+      <section>
+        <h2>Submission Fields</h2>
+        <div class="copy-list">
+          <div class="field">
+            <span class="label">Project title</span>
+            <span class="value" id="titleValue">EgePad Six Hackpad</span>
+            <button class="secondary" data-copy="EgePad Six Hackpad">Copy title</button>
+          </div>
+
+          <div class="field">
+            <span class="label">Project owner</span>
+            <span class="value">Ege &Ouml;zdemir</span>
+            <button class="secondary" data-copy="Ege &#214;zdemir">Copy owner</button>
+          </div>
+
+          <div class="field">
+            <span class="label">GitHub link</span>
+            <span class="value">https://github.com/Mert-Oezdemir/egepad-six-hackpad</span>
+            <button class="secondary" data-copy="https://github.com/Mert-Oezdemir/egepad-six-hackpad">Copy GitHub link</button>
+          </div>
+
+          <div class="field">
+            <span class="label">Short description</span>
+            <span class="value">Compact Hackpad macropad with a 2x3 MX switch matrix, EC11 rotary encoder, XIAO RP2040 controller, KMK firmware, PCB files, CAD source, BOM, and production folder.</span>
+            <button class="secondary" data-copy="Compact Hackpad macropad with a 2x3 MX switch matrix, EC11 rotary encoder, XIAO RP2040 controller, KMK firmware, PCB files, CAD source, BOM, and production folder.">Copy description</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current Status</h2>
+        <div class="status">
+          <span class="pill ready">Ready to log on Stardance</span>
+          <p>Use the GitHub repository as the project link. The repo includes README, BOM, CAD, PCB, firmware, production files, and requirement mapping.</p>
+          <span class="pill manual">Manual manufacturing review still required</span>
+          <p>Before ordering boards or printing the case, run KiCad ERC/DRC, export real Gerbers, regenerate STEP files from CAD tooling, and test KMK on the XIAO RP2040.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite">Copied</div>
+
+  <script>
+    const toast = document.getElementById("toast");
+    let toastTimer;
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add("visible");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove("visible"), 1400);
+    }
+
+    async function copyText(text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast("Copied");
+      } catch (error) {
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.left = "-9999px";
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        area.remove();
+        showToast("Copied");
+      }
+    }
+
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", () => copyText(button.dataset.copy));
+    });
+  </script>
+</body>
+</html>
